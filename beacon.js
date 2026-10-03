@@ -1,63 +1,47 @@
-const Audit = {
+const Beacon = {
 
-  calculate(data){
-
-    let score = 0;
-
-    const strengths = [];
-    const gaps = [];
-
-    if(data.businessName){
-
-      score += 20;
-
-      strengths.push(
-        "Business name provided"
-      );
-
-    }
-
-    if(data.website){
-
-      score += 20;
-
-      strengths.push(
-        "Website present"
-      );
-
-    }else{
-
-      gaps.push(
-        "Website missing"
-      );
-
-    }
-
-    if(data.gbp === "yes"){
-
-      score += 20;
-
-      strengths.push(
-        "Google Business Profile"
-      );
-
-    }else{
-
-      gaps.push(
-        "Google Business Profile missing"
-      );
-
-    }
+  observe(data){
 
     return {
 
-      score,
+      hasWebsite:
+        !!data.website,
 
-      strengths,
+      hasGBP:
+        data.gbp === "yes",
 
-      gaps
+      category:
+        data.category
 
     };
+
+  },
+
+  recommend(data){
+
+    const items = [];
+
+    if(!data.website){
+
+      items.push(
+        "Build a website"
+      );
+
+    }
+
+    if(data.gbp !== "yes"){
+
+      items.push(
+        "Create Google Business Profile"
+      );
+
+    }
+
+    items.push(
+      "Improve local discoverability"
+    );
+
+    return items;
 
   }
 
