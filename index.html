@@ -31,11 +31,22 @@
     <section id="phone" class="screen">
       <h2>Phone Verification</h2>
 
-      <input
-        id="phoneNumber"
-        type="tel"
-        placeholder="+234..."
-      >
+      <div class="phone-group">
+
+  <div class="country-code">
+    +234
+  </div>
+
+  <input
+    id="phoneNumber"
+    class="input"
+    type="tel"
+    inputmode="numeric"
+    placeholder="7012345678"
+  >
+
+</div>
+
 
       <button onclick="sendOtp()">
         Send Code
