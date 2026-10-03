@@ -16,13 +16,29 @@ const state = {
 
 function sendOtp(){
 
-  const phone =
-    document
-      .getElementById(
-        "phoneNumber"
-      )
-      .value
-      .trim();
+  let phone =
+  document
+    .getElementById(
+      "phoneNumber"
+    )
+    .value
+    .trim();
+
+phone = phone.replace(/\D/g, "");
+
+if(phone.startsWith("0")){
+  phone = phone.substring(1);
+}
+
+if(phone.length !== 10){
+  alert(
+    "Enter a valid Nigerian number"
+  );
+  return;
+}
+
+state.phone = "234" + phone;
+
 
   if(!phone){
 
