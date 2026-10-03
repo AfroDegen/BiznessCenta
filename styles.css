@@ -67,3 +67,24 @@ button{
   font-weight:700;
   cursor:pointer;
 }
+.phone-group{
+  display:flex;
+  gap:8px;
+}
+
+.country-code{
+  width:90px;
+  height:56px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid var(--line);
+  border-radius:14px;
+
+  background:#101012;
+  color:#c6c6c0;
+
+  font-weight:700;
+}
