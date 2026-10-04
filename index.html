@@ -1,128 +1,219 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BiznessCenta</title>
+<section id="hero" class="page">
 
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <header class="header">
 
-  <main class="app">
+        <div class="logo">
 
-  <header>
+            <div class="logo-dot"></div>
 
-  <div class="brand">
-    BIZNESSCENTA
-  </div>
+            BIZNESSCENTA
 
-  <div id="stepIndicator"></div>
+        </div>
 
-</header>
+        <button class="menu-btn">
+            ☰
+        </button>
 
+    </header>
 
+    <div class="hero-content">
 
-   <section id="hero" class="screen active">
+        <div class="eyebrow">
+            BUSINESS VISIBILITY SERVICES
+        </div>
 
-    <div class="eyebrow">
-        BUSINESS VISIBILITY SERVICES
+        <h1>
+
+            Your Product
+
+            <span>Is Great.</span>
+
+        </h1>
+
+        <p class="lead">
+
+            Promote your business where buyers
+            are already searching.
+
+        </p>
+
+        <ul class="benefits">
+
+            <li>
+                Build digital assets for your business.
+            </li>
+
+            <li>
+                Create content that gets you found.
+            </li>
+
+            <li>
+                Discover what's limiting your business visibility.
+            </li>
+
+        </ul>
+
+        <button
+            class="cta"
+            onclick="showScreen('phone')">
+
+            Get Free Business Visibility Audit
+
+        </button>
+
     </div>
 
-    <h1>
-        Your Product<br>
-        Is Great.
-    </h1>
+    <div class="hero-visual">
 
-    <p class="hero-copy">
-        Promote your business where buyers are already searching.
+        <div class="search-card">
+
+            <div class="pin">📍</div>
+
+            <div class="search-box">
+
+                your business...
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        class="scroll-cue"
+        onclick="scrollToPageTwo()">
+
+        WHY VISIBILITY MATTERS
+
+        <span>↓</span>
+
+    </div>
+
+</section>
+
+<section id="pageTwo" class="page page-two">
+
+    <header class="header">
+
+        <div class="logo">
+
+            <div class="logo-dot"></div>
+
+            BIZNESSCENTA
+
+        </div>
+
+        <button class="menu-btn">
+            ☰
+        </button>
+
+    </header>
+
+    <div class="eyebrow">
+
+        WHY VISIBILITY MATTERS
+
+    </div>
+
+    <h2>
+
+        BUYERS DON'T
+        SEARCH FOR
+        BUSINESSES.
+
+    </h2>
+
+    <h2 class="green">
+
+        THEY SEARCH
+        FOR SOLUTIONS.
+
+    </h2>
+
+    <p class="search-label">
+
+        When someone searches:
+
     </p>
 
-    <p class="hero-copy">
-        Build digital assets that help your business get recommended to active buyers.
+    <div class="search-examples">
+
+        <div>🔍 protein powder near me</div>
+
+        <div>🔍 tailor in Osogbo</div>
+
+        <div>🔍 best salon nearby</div>
+
+    </div>
+
+    <p class="supporting">
+
+        They're actively looking for a solution.
+
     </p>
 
-    <p class="hero-copy">
-        Create content that increases your visibility across Google Search, Google Maps, and customer discovery platforms.
+    <p class="supporting">
+
+        The question is not whether your business is good.
+
     </p>
 
-    <p class="hero-copy hero-highlight">
-        Discover what's limiting your business visibility.
+    <p class="highlight">
+
+        The question is whether your business can be found.
+
     </p>
+
+    <div class="pillars">
+
+        <div class="pillar">
+
+            <h3>SEARCH VISIBILITY</h3>
+
+            <p>
+                Be there when people are searching.
+            </p>
+
+        </div>
+
+        <div class="pillar">
+
+            <h3>GOOGLE PRESENCE</h3>
+
+            <p>
+                Show up where it matters most.
+            </p>
+
+        </div>
+
+        <div class="pillar">
+
+            <h3>DIGITAL ASSETS</h3>
+
+            <p>
+                Build the foundation for growth.
+            </p>
+
+        </div>
+
+        <div class="pillar">
+
+            <h3>BUYER DISCOVERY</h3>
+
+            <p>
+                Turn searchers into customers.
+            </p>
+
+        </div>
+
+    </div>
 
     <button
-        class="primary-btn"
+        class="cta"
         onclick="showScreen('phone')">
 
         Get Free Business Visibility Audit
 
     </button>
 
-    <div class="feature-list">
-
-        <div class="feature">
-            ✓ Professional website
-        </div>
-
-        <div class="feature">
-            ✓ 1 year domain included
-        </div>
-
-        <div class="feature">
-            ✓ Google Business Profile setup
-        </div>
-
-        <div class="feature">
-            ✓ Visibility recommendations
-        </div>
-
-    </div>
-
 </section>
-
-
-
-    <section id="phone" class="screen">
-     <h2>
-  Start Your Audit
-</h2>
-
-<p class="hero-copy">
-  Enter your WhatsApp number
-  to begin your visibility audit.
-</p>
-
-
-      <div class="phone-group">
-
-  <div class="country-code">
-    +234
-  </div>
-
-  <input
-    id="phoneNumber"
-    class="input"
-    type="tel"
-    inputmode="numeric"
-    placeholder="7012345678"
-  >
-
-</div>
-
-
-      <button onclick="sendOtp()">
-        Send Code
-      </button>
-    </section>
-
-  </main>
-
-  <script src="config.js"></script>
-  <script src="storage.js"></script>
-  <script src="audit.js"></script>
-  <script src="beacon.js"></script>
-  <script src="router.js"></script>
-  <script src="app.js"></script>
-
-</body>
-</html>
