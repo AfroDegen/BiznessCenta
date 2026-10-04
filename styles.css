@@ -1,90 +1,186 @@
-:root{
-  --bg:#0b0b0c;
-  --fg:#f5f5f5;
-  --green:#39d98a;
-  --line:#232327;
-}
-
-*{
-  box-sizing:border-box;
-}
-
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--fg);
-  font-family:system-ui,sans-serif;
-}
-
-.app{
-  max-width:600px;
-  margin:auto;
-  padding:24px;
-}
-
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+/* =================================
+   BIZNESSCENTA HERO
+================================= */
 
 .brand{
-  color:var(--green);
-  text-decoration:none;
+
+  color:#39d98a;
+
+  font-size:20px;
+
   font-weight:800;
+
+  letter-spacing:-0.04em;
 }
 
-.screen{
-  display:none;
-  padding-top:48px;
+.eyebrow{
+
+  margin-bottom:20px;
+
+  color:#39d98a;
+
+  font-size:12px;
+
+  font-weight:800;
+
+  letter-spacing:0.16em;
+
+  text-transform:uppercase;
 }
 
-.screen.active{
-  display:block;
+.hero-copy{
+
+  margin:24px 0 34px;
+
+  color:#c6c6c0;
+
+  font-size:20px;
+
+  line-height:1.6;
+
+  letter-spacing:-0.02em;
 }
 
-h1{
-  font-size:58px;
-  line-height:.95;
-}
+.primary-btn{
 
-input{
   width:100%;
-  padding:16px;
-  border-radius:12px;
-  border:1px solid var(--line);
-  background:#111;
-  color:white;
-}
 
-button{
-  width:100%;
-  padding:16px;
-  margin-top:16px;
+  min-height:60px;
+
   border:none;
+
   border-radius:999px;
-  background:var(--green);
-  font-weight:700;
+
+  background:#39d98a;
+
+  color:#08130d;
+
+  font-size:18px;
+
+  font-weight:800;
+
   cursor:pointer;
+
+  transition:
+    transform .18s ease,
+    opacity .18s ease;
 }
-.phone-group{
+
+.primary-btn:hover{
+
+  transform:translateY(-1px);
+}
+
+.primary-btn:active{
+
+  transform:translateY(0);
+}
+
+.benefits{
+
+  margin-top:26px;
+
   display:flex;
-  gap:8px;
+
+  flex-direction:column;
+
+  gap:14px;
+}
+
+.benefits div{
+
+  color:#c6c6c0;
+
+  font-size:16px;
+
+  line-height:1.5;
+}
+
+/* =================================
+   PHONE INPUT
+================================= */
+
+.phone-group{
+
+  display:flex;
+
+  gap:10px;
+
+  margin-bottom:20px;
 }
 
 .country-code{
-  width:90px;
+
+  min-width:90px;
+
   height:56px;
 
   display:flex;
+
   align-items:center;
+
   justify-content:center;
 
   border:1px solid var(--line);
+
   border-radius:14px;
 
   background:#101012;
+
   color:#c6c6c0;
 
   font-weight:700;
+}
+
+/* =================================
+   HEADINGS
+================================= */
+
+h1{
+
+  margin:0;
+
+  font-size:58px;
+
+  font-weight:800;
+
+  line-height:.95;
+
+  letter-spacing:-0.07em;
+}
+
+h2{
+
+  margin:0 0 16px;
+
+  font-size:38px;
+
+  font-weight:800;
+
+  line-height:1;
+
+  letter-spacing:-0.05em;
+}
+
+/* =================================
+   SMALL DEVICES
+================================= */
+
+@media (max-width:480px){
+
+  h1{
+
+    font-size:52px;
+  }
+
+  h2{
+
+    font-size:34px;
+  }
+
+  .hero-copy{
+
+    font-size:18px;
+  }
+
 }
